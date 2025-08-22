@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+        <script>
+            var day;
+            switch(new Date() .getDay()){
+            case  0:
+                day = "Sunday";
+                break;
+            case  1:
+                day = "Monday";
+                break;
+            case  2:
+                day = "Tuesday";
+                break;
+            case  3:
+                day = "Wednesday";
+                break;
+            case  4:
+                day = "Thursday";
+                break;
+            case  5:
+                day = "Friday";
+                break;
+            case  6:
+                day = "Saturday";
+                break;
+            }
+                document.getElementById("demo").innerHTML="Today is:" + day;
+             var numbers=["1" , "2" , "3" , "4" , "5" , "6" ];
+            var text="Number list:  ";
+            var i;
+            for (i=0; i < numbers.length; i++ ) {
+                text+= numbers[i] + "<br>";
+            }
+            document.getElementById("demo1") .innerHTML= text;
+        </script>
+    </body>
+</html>
